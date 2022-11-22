@@ -18,6 +18,15 @@
   </div>
 </div>
 
+# Releases
+### Desktop
+[Release 11_22](https://czechvisual.github.io/Sluno-emailing/output/production/sluno-newsletter-11_12.html) ,
+
+### Mailchimp
+[Release 11_22](https://czechvisual.github.io/Sluno-emailing/output/mailchimp/sluno-newsletter-11_12.html) ,
+
+---
+
 ## Getting Started
 
 Clone this starter:
