@@ -10,6 +10,7 @@ module.exports = {
   removeUnusedCSS: true,
   prettify: true,
   baseURL: {
-    url: 'https://czechvisual.github.io/Sluno-emailing/output/production/'
+    url: 'https://czechvisual.github.io/Sluno-emailing/output/production/',
+    tags: ['img']
   }
 }
