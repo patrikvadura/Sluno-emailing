@@ -1,0 +1,45 @@
+{
+  "brand": {
+    "name": "U&Sluno",
+    "website": "www.u-sluno.eu",
+    "email": "u-sluno@u-sluno.cz",
+    "phone": "+420 596 134 157"
+  },
+  "links": {
+    "PrimaryLink": "https://www.sluno.cz/",
+    "unsub": "{{ unsubscribe }}",
+    "unsubDesktop": "{{ unsubscribe }}",
+    "email_mailto": "u-sluno@u-sluno.cz",
+    "email_subject": "Ukázka dema",
+    "email_cc": "",
+    "email_body": "Dobrý den, přečetl jsem si váš newsletter a měl bych zájem o ukázku dema vašeho e-shopu GRANDeSHOP.",
+    "social": {
+      "fb": "https://www.facebook.com/slunocz/",
+      "yt": "https://www.youtube.com/channel/UC1ztuszn-Si95RalNja1Njw",
+      "in": "https://www.linkedin.com/company/354076/",
+      "spotify": "https://anchor.fm/usluno"
+    }
+  },
+  "lang": {
+    "footer": {
+      "newsletter": "Nechcete dostávat naše newslettery?",
+      "newsletter_1": "Klikněte na",
+      "newsletter_logout": "odhlásit"
+    },
+    "topBar": "Zobrazit newsletter v prohlížeči"
+  },
+  "images": {
+    "logo": {
+      "default" : "images/logo/logo.png",
+      "negative": "images/logo/logo_negative.png",
+      "negative_alt": "images/logo/logo_negative_alt.png",
+      "monochrome": "images/logo/logo_monochrome.png"
+    },
+    "social": {
+      "fb": "images/icons/facebook-gray.png",
+      "yt": "images/icons/youtube-gray.png",
+      "in": "images/icons/linkedin-gray.png",
+      "spotify": "images/icons/spotify-gray.png"
+    }
+  }
+}
