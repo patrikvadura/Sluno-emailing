@@ -14,4 +14,7 @@ module.exports = {
       root: './src/components'
     }
   },
+  baseURL: {
+    url: 'https://czechvisual.github.io/Sluno-emailing/output/production/'
+  }
 }
