@@ -10,6 +10,12 @@ headerMailchimp: "https://res.cloudinary.com/patrik-vadura/image/upload/v1669035
 title: "Vychystávejte rychleji a bezpečněji: představujeme FlexShelf"
 description: "Vychystávání s autonomními roboty nebylo nikdy flexibilnější. Více obrazovek, vysoce nastavitelné police a další příslušenství nabízí FlexShelf."
 
+video1:
+  url: "https://youtu.be/AFPfFeJWanY"
+  image:
+    src: "https://res.cloudinary.com/patrik-vadura/image/upload/v1669033874/USLUNO/newsletter_11_22/video_thumbnail_kjchut.jpg"
+    alt: "FlexShelf v praxi"
+
 benefits:
   title: "Co vám přinese"
   image:
@@ -19,11 +25,11 @@ benefits:
   item2: "Kompatibilní s ručními, hlasovými a vizuálními systémy"
   item3: "Optimalizovaný pro WMS a WES k automatizaci celého skladu"
 
-video:
+video2:
   title: "FlexShelf v praxi"
   url: "https://www.youtube.com/watch?v=Gg6KjLp-cF4"
   image:
-    src: "https://res.cloudinary.com/patrik-vadura/image/upload/v1669033874/USLUNO/newsletter_11_22/video_thumbnail_kjchut.jpg"
+    src: "https://res.cloudinary.com/patrik-vadura/image/upload/v1669282275/USLUNO/newsletter_11_22/N%C3%A1vrh_bez_n%C3%A1zvu_10_hndh1b.png"
     alt: "FlexShelf v praxi"
 ---
 
@@ -112,6 +118,24 @@ video:
         </tr>
       </table>
 
+      <!-- Video -->
+      <table class="px-8 {{ page.tableReset }}">
+        <tr>
+          <td class="text-center">
+            <a href="{{ page.video1.url }}">
+              <img src="{{ page.video1.image.src }}" alt="{{ page.video1.image.alt }}" style="max-width: 500px;">
+            </a>
+          </td>
+        </tr>
+      </table>
+
+      <!-- Spacer -->
+      <table class="{{ page.tableReset }}">
+        <tr>
+          <td class="leading-8">&zwnj;</td>
+        </tr>
+      </table>
+
       <!-- Benefits -->
       <table class="{{ page.tableReset }}">
         <tr class="px-32">
@@ -162,11 +186,11 @@ video:
             </table>
 
             <h1 class="text-secondary text-2xl font-extrabold pb-4 leading-sm sm:leading-sm">
-              {{ page.video.title }}
+              {{ page.video2.title }}
             </h1>
 
-            <a href="{{ page.video.url }}">
-              <img src="{{ page.video.image.src }}" alt="{{ page.video.image.alt }}" style="max-width: 500px;">
+            <a href="{{ page.video2.url }}">
+              <img src="{{ page.video2.image.src }}" alt="{{ page.video2.image.alt }}" style="max-width: 500px;">
             </a>
 
             <!-- Spacer -->
@@ -195,7 +219,7 @@ video:
 </if>
 
 <!-- Production -->
-<if condition="page.env === 'production'">
+<if condition="page.env === 'production' || 'local'">
   <extends src="src/layouts/main.html">
     <block name="template">
       <table class="w-full font-sans">
@@ -227,6 +251,23 @@ video:
                       </p>
                     </td>
                     </th>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+            <!-- Video -->
+            <table class="py-8 w-full sm:w-full">
+              <tr>
+                <td align="center">
+                  <table class="{{ page.tableReset }}">
+                    <tr>
+                      <td class="px-8 text-center">
+                        <a href="{{ page.video1.url }}">
+                          <img src="{{ page.video1.image.src }}" alt="{{ page.video1.image.alt }}">
+                        </a>
+                      </td>
+                    </tr>
                   </table>
                 </td>
               </tr>
@@ -271,11 +312,11 @@ video:
                     <tr>
                       <td class="px-8 text-center">
                         <h1 class="text-secondary text-2xl font-extrabold mb-8 leading-sm sm:leading-sm">
-                          {{ page.video.title }}
+                          {{ page.video2.title }}
                         </h1>
 
-                        <a href="{{ page.video.url }}">
-                          <img src="{{ page.video.image.src }}" alt="{{ page.video.image.alt }}">
+                        <a href="{{ page.video2.url }}">
+                          <img src="{{ page.video2.image.src }}" alt="{{ page.video2.image.alt }}">
                         </a>
                       </td>
                     </tr>
