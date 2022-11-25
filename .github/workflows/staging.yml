@@ -16,10 +16,10 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
         server: cluster.hostliner.cz
-        username: ${{ secrets.FTP_USERNAME_CLUSTER }}
-        password: ${{ secrets.FTP_PASSWORD_CLUSTER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
         protocol: ftps
         port: 21
         local-dir: ./output/staging/
-        server-dir: czechvisual.space/sluno/newsletter/staging/
+        server-dir: sluno/newsletter/staging/
         state-name: .staging.json
