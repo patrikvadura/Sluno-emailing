@@ -2,9 +2,9 @@
   "private": true,
   "scripts": {
     "dev": "maizzle serve",
-    "build": "maizzle build production & maizzle build mailchimp",
-    "build:production": "maizzle build production",
-    "build:mailchimp": "maizzle build mailchimp"
+    "build": "maizzle build production & maizzle build production_s & maizzle build mailchimp & maizzle build mailchimp_s",
+    "build:production": "maizzle build production & maizzle build mailchimp",
+    "build:staging": "maizzle build production_s & maizzle build mailchimp_s"
   },
   "dependencies": {
     "@maizzle/framework": "latest",
