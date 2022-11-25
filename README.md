@@ -25,7 +25,8 @@
 
 Open production or staging deploy server and simple change last digits of the URL path.
 
-11-22,
+Check availibe [Releases](https://github.com/czechvisual/Sluno-emailing/releases)
+
 
 ---
 
