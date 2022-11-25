@@ -18,6 +18,8 @@ jobs:
         server: cluster.hostliner.cz
         username: ${{ secrets.FTP_USERNAME_CLUSTER }}
         password: ${{ secrets.FTP_PASSWORD_CLUSTER }}
+        protocol: ftps
+        port: 21
         local-dir: ./output/staging/
         server-dir: czechvisual.space/sluno/newsletter/staging/
         state-name: .staging.json
