@@ -4,33 +4,35 @@ preheader: ""
 
 tableReset: "w-600 sm:w-full"
 
-header: "https://res.cloudinary.com/patrik-vadura/image/upload/v1669029146/USLUNO/newsletter_11_22/backgrounds/background_gradient_primary_wnm4sj.jpg"
-headerMailchimp: "https://res.cloudinary.com/patrik-vadura/image/upload/v1669035445/USLUNO/newsletter_11_22/backgrounds/background_gradient_primary_w600_pbsujz.jpg"
+header: "https://res.cloudinary.com/patrik-vadura/image/upload/v1669795741/USLUNO/newsletter_11_22/backgrounds/background_gradient_blue_1_fuqxwo.jpg"
+headerMailchimp: "https://res.cloudinary.com/patrik-vadura/image/upload/v1669795742/USLUNO/newsletter_11_22/backgrounds/background_gradient_blue_w600_1_hioy0y.jpg"
 
-title: "Vychystávejte rychleji a bezpečněji: představujeme FlexShelf"
-description: "Vychystávání s autonomními roboty nebylo nikdy flexibilnější. Více obrazovek, vysoce nastavitelné police a další příslušenství nabízí FlexShelf."
-
-video1:
-  url: "https://youtu.be/AFPfFeJWanY"
-  image:
-    src: "https://res.cloudinary.com/patrik-vadura/image/upload/v1669033874/USLUNO/newsletter_11_22/video_thumbnail_kjchut.jpg"
-    alt: "FlexShelf v praxi"
+title: "Zrychlete vychystávání!"
+description: "Nasaďte autonomní roboty, kteří se napojí na vaše stávající systémy a nevyžadují žádné stavební úpravy skladu. Představujeme autonomního robota FlexShelf."
 
 benefits:
   title: "Co vám přinese"
   image:
     src: "https://res.cloudinary.com/patrik-vadura/image/upload/v1669033027/USLUNO/newsletter_11_22/Zebra-Fetch-FlexShelf-Guide-Dual-1536x1229_gvkhkd.png"
     alt: "FlexShelf"
-  item1: "O 50 % rychlejší a 67 % prostornější než konkurence"
-  item2: "Kompatibilní s ručními, hlasovými a vizuálními systémy"
-  item3: "Optimalizovaný pro WMS a WES k automatizaci celého skladu"
+  item1: "Komunikuje jakýmkoli jazykem"
+  item2: "Je o 60 % rychlejší než konkurence"
+  item3: "Zdvojnásobí průchodnost objednávky"
+  item4: "Má o 67 % více místa v přepravkách než jiná AMR"
+  item5: "Interaktivní dotyková obrazovka je vhodná i pro práci v rukavicích"
 
-video2:
-  title: "FlexShelf v praxi"
-  url: "https://www.youtube.com/watch?v=Gg6KjLp-cF4"
+video:
+  title: "FlexShelf ve Skladonu"
+  url: "https://youtu.be/Gg6KjLp-cF4?t=58"
   image:
     src: "https://res.cloudinary.com/patrik-vadura/image/upload/v1669282275/USLUNO/newsletter_11_22/N%C3%A1vrh_bez_n%C3%A1zvu_10_hndh1b.png"
     alt: "FlexShelf v praxi"
+
+photo:
+  title: "Díky integrované čtečce NFC mohou s displejem robota manipulovat pouze ti, kteří k tomu mají oprávnění."
+  image:
+    src: "https://res.cloudinary.com/patrik-vadura/image/upload/v1669796179/USLUNO/newsletter_11_22/JSM04179_h41dfp.jpg"
+    alt: "NFC"
 ---
 
 <!-- Mailchimp -->
@@ -69,23 +71,16 @@ video2:
               <table class="px-8 {{ page.tableReset }}">
                 <tr>
                   <td class="{{ page.smReset }} text-left">
-                    <component src="brand/logo.html" locals='{ "logo": "negative", "url": "", "width": "250" }'></component>
-
-                    <!-- Spacer -->
-                    <table class="w-600">
-                      <component src="spacers/spacer.html" locals='{ "size": "8" }'></component>
-                    </table>
-
                     <a href="" class="no-underline text-white" target="_blank">
                       <h1 class="text-white text-4xl font-extrabold leading-sm sm:leading-sm">
-                        {{ page.title }}
+                        {{ page.title }} <span class="text-brand-robotics">TŘIKRÁT</span>.
                       </h1>
                     </a>
 
                     <!-- Spacer -->
                     <table class="{{ page.tableReset }}">
                       <tr>
-                        <td class="leading-8">&zwnj;</td>
+                        <td class="leading-4">&zwnj;</td>
                       </tr>
                     </table>
 
@@ -114,7 +109,7 @@ video2:
       <!-- Spacer -->
       <table class="{{ page.tableReset }}">
         <tr>
-          <td class="leading-16">&zwnj;</td>
+          <td class="leading-8">&zwnj;</td>
         </tr>
       </table>
 
@@ -122,8 +117,12 @@ video2:
       <table class="px-8 {{ page.tableReset }}">
         <tr>
           <td class="text-center">
-            <a href="{{ page.video1.url }}" target="_blank">
-              <img src="{{ page.video1.image.src }}" alt="{{ page.video1.image.alt }}" style="max-width: 500px;">
+            <h1 class="text-secondary text-2xl font-extrabold pb-4 leading-sm sm:leading-sm">
+              {{ page.video.title }}
+            </h1>
+
+            <a href="{{ page.video.url }}" target="_blank">
+              <img src="{{ page.video.image.src }}" alt="{{ page.video.image.alt }}" style="max-width: 500px;">
             </a>
           </td>
         </tr>
@@ -149,20 +148,28 @@ video2:
             </h1>
 
             <ul class="mb-4 pl-4">
-              <li class="text-secondary my-4 leading-sm sm:leading-sm">
+              <li class="text-secondary my-3 leading-sm sm:leading-sm">
                 {{ page.benefits.item1 }}
               </li>
 
-              <li class="text-secondary my-4 leading-sm sm:leading-sm">
+              <li class="text-secondary my-3 leading-sm sm:leading-sm">
                 {{ page.benefits.item2 }}
               </li>
 
-              <li class="text-secondary my-4 leading-sm sm:leading-sm">
+              <li class="text-secondary my-3 leading-sm sm:leading-sm">
                 {{ page.benefits.item3 }}
+              </li>
+
+              <li class="text-secondary my-3 leading-sm sm:leading-sm">
+                {{ page.benefits.item4 }}
+              </li>
+
+              <li class="text-secondary my-3 leading-sm sm:leading-sm">
+                {{ page.benefits.item5 }}
               </li>
             </ul>
 
-            <component src="buttons/button.html" locals='{ "content": "Mám zájem", "url": "", "class": "bg-primary text-secondary" }'></component>
+            <component src="buttons/button.html" locals='{ "content": "Mám zájem", "url": "mailto: robotics@sluno.cz;", "class": "bg-brand-robotics text-white" }'></component>
           </td>
         </tr>
       </table>
@@ -185,13 +192,11 @@ video2:
               </tr>
             </table>
 
-            <h1 class="text-secondary text-2xl font-extrabold pb-4 leading-sm sm:leading-sm">
-              {{ page.video2.title }}
-            </h1>
+            <img src="{{ page.photo.image.src }}" alt="{{ page.photo.image.alt }}" style="max-width: 500px;">
 
-            <a href="{{ page.video2.url }}" target="_blank">
-              <img src="{{ page.video2.image.src }}" alt="{{ page.video2.image.alt }}" style="max-width: 500px;">
-            </a>
+            <p class="text-secondary text-base font-extrabold py-4 leading-sm sm:leading-sm">
+              {{ page.photo.title }}
+            </p>
 
             <!-- Spacer -->
             <table class="{{ page.tableReset }}">
@@ -212,13 +217,13 @@ video2:
 
       <!-- Footer -->
       <table class="bg-white {{ page.tableReset }}">
-        <component src="footer.html"></component>
+        <component src="footer.html" locals='{ "brand": "robotics" }'></component>
       </table>
     </block>
   </extends>
 </if>
 
-<!-- Production -->
+<!-- Production, local -->
 <if condition="page.env === 'production' || 'local'">
   <extends src="src/layouts/main.html">
     <block name="template">
@@ -238,11 +243,9 @@ video2:
                   <table class="py-8 {{ page.tableReset }}">
                     <th>
                     <td class="px-8">
-                      <component src="brand/logo.html" locals='{ "logo": "negative", "url": "", "width": "250" }'></component>
-
                       <a href="" class="no-underline" target="_blank">
                         <h1 class="text-white text-4xl font-extrabold mt-8 leading-sm sm:leading-sm">
-                          {{ page.title }}
+                          {{ page.title }} <span class="text-brand-robotics">TŘIKRÁT</span>.
                         </h1>
                       </a>
 
@@ -263,8 +266,12 @@ video2:
                   <table class="{{ page.tableReset }}">
                     <tr>
                       <td class="px-8 text-center">
-                        <a href="{{ page.video1.url }}" target="_blank">
-                          <img src="{{ page.video1.image.src }}" alt="{{ page.video1.image.alt }}">
+                        <h1 class="text-secondary text-2xl font-extrabold mb-8 leading-sm sm:leading-sm">
+                          {{ page.video.title }}
+                        </h1>
+
+                        <a href="{{ page.video.url }}" target="_blank">
+                          <img src="{{ page.video.image.src }}" alt="{{ page.video.image.alt }}" style="width: 500px;">
                         </a>
                       </td>
                     </tr>
@@ -277,7 +284,7 @@ video2:
             <table class="py-8 {{ page.tableReset }}">
               <tr>
                 <td class="w-6/12">
-                  <img src="{{ page.benefits.image.src }}" alt="{{ page.image.alt }}">
+                  <img src="{{ page.benefits.image.src }}" alt="{{ page.image.alt }}" style="width: 300px;">
                 </td>
 
                 <td class="w-6/12">
@@ -286,38 +293,44 @@ video2:
                   </h1>
 
                   <ul class="mb-8 pl-4">
-                    <li class="text-secondary my-4 leading-sm sm:leading-sm">
+                    <li class="text-secondary my-3 leading-sm sm:leading-sm">
                       {{ page.benefits.item1 }}
                     </li>
 
-                    <li class="text-secondary my-4 leading-sm sm:leading-sm">
+                    <li class="text-secondary my-3 leading-sm sm:leading-sm">
                       {{ page.benefits.item2 }}
                     </li>
 
-                    <li class="text-secondary my-4 leading-sm sm:leading-sm">
+                    <li class="text-secondary my-3 leading-sm sm:leading-sm">
                       {{ page.benefits.item3 }}
+                    </li>
+
+                    <li class="text-secondary my-3 leading-sm sm:leading-sm">
+                      {{ page.benefits.item4 }}
+                    </li>
+
+                    <li class="text-secondary my-3 leading-sm sm:leading-sm">
+                      {{ page.benefits.item5 }}
                     </li>
                   </ul>
 
-                  <component src="buttons/button.html" locals='{ "content": "Mám zájem", "url": "", "class": "bg-primary text-secondary" }'></component>
+                  <component src="buttons/button.html" locals='{ "content": "Mám zájem", "url": "mailto:robotics@sluno.cz;", "class": "bg-brand-robotics text-white" }'></component>
                 </td>
               </tr>
             </table>
 
-            <!-- Video -->
+            <!-- Photo -->
             <table class="bg-gray-lighter py-8 w-full sm:w-full">
               <tr>
                 <td align="center">
                   <table class="{{ page.tableReset }}">
                     <tr>
                       <td class="px-8 text-center">
-                        <h1 class="text-secondary text-2xl font-extrabold mb-8 leading-sm sm:leading-sm">
-                          {{ page.video2.title }}
-                        </h1>
+                        <img src="{{ page.photo.image.src }}" alt="{{ page.photo.image.alt }}" style="width: 400px;">
 
-                        <a href="{{ page.video2.url }}" target="_blank">
-                          <img src="{{ page.video2.image.src }}" alt="{{ page.video2.image.alt }}">
-                        </a>
+                        <p class="text-secondary text-base font-extrabold my-8 leading-sm sm:leading-sm">
+                          {{ page.photo.title }}
+                        </p>
                       </td>
                     </tr>
                   </table>
@@ -332,7 +345,7 @@ video2:
 
             <!-- Footer -->
             <table class="w-full bg-white">
-              <component src="footer.html"></component>
+              <component src="footer.html" locals='{ "brand": "robotics" }'></component>
             </table>
           </td>
         </tr>
