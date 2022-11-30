@@ -20,6 +20,6 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         protocol: ftps
         port: 21
-        local-dir: ./output/staging/
+        local-dir: ./output/
         server-dir: sluno/newsletter/staging/
         state-name: .staging.json
