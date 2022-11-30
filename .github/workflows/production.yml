@@ -3,7 +3,7 @@ on:
     branches:
       - master
       
-name: 🛠️ Staging deploy on merge
+name: 🚀 Production deploy on merge
 jobs:
   web-deploy:
     name: 🎉 Deploy
@@ -22,4 +22,4 @@ jobs:
         port: 21
         local-dir: ./output/
         server-dir: sluno/newsletter/
-        state-name: .staging.json
+        state-name: .production.json
