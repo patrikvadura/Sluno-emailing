@@ -36,7 +36,7 @@ photo:
 ---
 
 <!-- Mailchimp -->
-<if condition="page.env === 'mailchimp'">
+<if condition="page.env === 'mailchimp_s' || 'mailchimp'">
   <extends src="src/layouts/main.html">
     <block align="center" class="bg-white" name="template">
       <!-- TopBar -->
@@ -224,7 +224,7 @@ photo:
 </if>
 
 <!-- Production, local -->
-<if condition="page.env === 'production' || 'local'">
+<if condition="page.env === 'production' || 'production_s' || 'local'">
   <extends src="src/layouts/main.html">
     <block name="template">
       <table class="bg-white w-full font-sans">
