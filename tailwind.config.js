@@ -11,6 +11,10 @@ module.exports = {
       white: '#ffffff',
       primary: '#F37815',
       secondary: '#000000',
+      brand: {
+        'default': '#F37815',
+        'robotics': '#0069BF'
+      },
       gray: {
         'lighter': '#f8f8f8',
         'light': '#cbcbcb',

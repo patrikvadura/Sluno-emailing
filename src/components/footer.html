@@ -1,22 +1,53 @@
 <tr>
   <td align="center" class="py-4">
-    <img src="images/logo/logo.png" class="p-4 block text-center" width="100" alt="">
-    <a href="https://sluno.cz/"
-       class="text-md text-secondary font-bold no-underline block text-center"
-       target="_blank">
-      <h4 class="text-center">
-        www.sluno.cz
-      </h4>
-    </a>
-    <p class="text-sm text-gray-normal text-center font-bold no-underline block">
-      <a href="mailto:sluno@sluno.cz
-              ?subject='Zpráva'
-              &cc='sluno@sluno.cz'
-              &body='Zpráva'"
-         class="text-gray-normal no-underline">
-        sluno@sluno.cz
+    <!-- Logo -->
+    <if condition="brand === 'robotics'">
+      <img src="images/logo/logo_robotics.png" class="p-4 block text-center" width="170" alt="">
+    </if>
+
+    <else>
+      <img src="images/logo/logo.png" class="p-4 block text-center" width="100" alt="">
+    </else>
+
+    <!-- Contact -->
+    <if condition="brand === 'robotics'">
+      <a href="https://sluno.cz/"
+         class="text-md text-secondary font-bold no-underline block text-center"
+         target="_blank">
+        <h4 class="text-center">
+          www.sluno.cz
+        </h4>
       </a>
-      | +420 596 134 157</p>
+      <p class="text-sm text-gray-normal text-center font-bold no-underline block">
+        <a href="mailto:robotics@sluno.cz
+              ?subject=''
+              &body=''"
+           class="text-gray-normal no-underline">
+          robotics@sluno.cz
+        </a>
+        | +420 596 134 157</p>
+    </if>
+
+    <else>
+      <a href="https://sluno.cz/"
+         class="text-md text-secondary font-bold no-underline block text-center"
+         target="_blank">
+        <h4 class="text-center">
+          www.sluno.cz
+        </h4>
+      </a>
+      <p class="text-sm text-gray-normal text-center font-bold no-underline block">
+        <a href="mailto:sluno@sluno.cz
+                ?subject='Zpráva'
+                &cc='sluno@sluno.cz'
+                &body='Zpráva'"
+           class="text-gray-normal no-underline">
+          sluno@sluno.cz
+        </a>
+        | +420 596 134 157</p>
+    </else>
+
+    <!-- Social -->
     <table>
       <tr>
         <td class="p-3">
