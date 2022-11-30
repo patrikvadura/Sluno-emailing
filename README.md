@@ -6,11 +6,11 @@
   </p>
 
   <p>
-    <a href="https://www.czechvisual.space/sluno/newsletter/production/desktop/newsletter-11-22.html" target="_blank">
+    <a href="https://www.czechvisual.space/sluno/newsletter/newsletter-11-22.html" target="_blank">
       <img src="https://res.cloudinary.com/patrik-vadura/image/upload/v1669369398/czechvisual/github%20-%20badges/badge_production_wh6c65.svg" height="20" style="max-width: 100%;" alt="">
     </a>
-    <a href="https://www.czechvisual.space/sluno/newsletter/staging/desktop/newsletter-11-22.html" target="_blank">
-      <img src="https://res.cloudinary.com/patrik-vadura/image/upload/v1669369399/czechvisual/github%20-%20badges/badge_staging_qsxceh.svg" height="20" style="max-width: 100%;" alt="">
+    <a href="https://www.czechvisual.space/sluno/newsletter/mailchimp/newsletter-11-22.html" target="_blank">
+      <img src="https://res.cloudinary.com/patrik-vadura/image/upload/v1669810783/czechvisual/github%20-%20badges/badge_mailchimp_lbjndq.svg" height="20" style="max-width: 100%;" alt="">
     </a>
     <a href="https://maizzle.com" target="_blank">
       <img src="https://res.cloudinary.com/patrik-vadura/image/upload/v1669368548/czechvisual/github%20-%20badges/badge_documentation_cplqlp.svg" height="20" style="max-width: 100%;" alt="">

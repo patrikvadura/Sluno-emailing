@@ -1,0 +1,221 @@
+---
+ReleaseN: "11-22"
+preheader: ""
+
+tableReset: "w-600 sm:w-full"
+
+header: "https://res.cloudinary.com/patrik-vadura/image/upload/v1669795741/USLUNO/newsletter_11_22/backgrounds/background_gradient_blue_1_fuqxwo.jpg"
+headerMailchimp: "https://res.cloudinary.com/patrik-vadura/image/upload/v1669795742/USLUNO/newsletter_11_22/backgrounds/background_gradient_blue_w600_1_hioy0y.jpg"
+
+title: "Zrychlete vychystávání!"
+description: "Nasaďte autonomní roboty, kteří se napojí na vaše stávající systémy a nevyžadují žádné stavební úpravy skladu. Představujeme autonomního robota FlexShelf."
+
+benefits:
+  title: "Co vám přinese"
+  image:
+    src: "https://res.cloudinary.com/patrik-vadura/image/upload/v1669033027/USLUNO/newsletter_11_22/Zebra-Fetch-FlexShelf-Guide-Dual-1536x1229_gvkhkd.png"
+    alt: "FlexShelf"
+  item1: "Komunikuje jakýmkoli jazykem"
+  item2: "Je o 60 % rychlejší než konkurence"
+  item3: "Zdvojnásobí průchodnost objednávky"
+  item4: "Má o 67 % více místa v přepravkách než jiná AMR"
+  item5: "Interaktivní dotyková obrazovka je vhodná i pro práci v rukavicích"
+
+video:
+  title: "FlexShelf ve Skladonu"
+  url: "https://youtu.be/Gg6KjLp-cF4?t=58"
+  image:
+    src: "https://res.cloudinary.com/patrik-vadura/image/upload/v1669282275/USLUNO/newsletter_11_22/N%C3%A1vrh_bez_n%C3%A1zvu_10_hndh1b.png"
+    alt: "FlexShelf v praxi"
+
+photo:
+  title: "Díky integrované čtečce NFC mohou s displejem robota manipulovat pouze ti, kteří k tomu mají oprávnění."
+  image:
+    src: "https://res.cloudinary.com/patrik-vadura/image/upload/v1669796179/USLUNO/newsletter_11_22/JSM04179_h41dfp.jpg"
+    alt: "NFC"
+---
+
+<extends src="src/layouts/main.html">
+  <block align="center" class="bg-white" name="template">
+    <!-- TopBar -->
+    <table class="bg-white {{ page.tableReset }}">
+      <component src="topBar.html"></component>
+    </table>
+
+    <!-- Hero -->
+    <table class="{{ page.tableReset }}">
+      <tr class="text-center">
+        <td
+          background="{{ page.headerMailchimp }}"
+          bgcolor="#ffffff"
+          align="center"
+          width="600"
+          class="bg-center bg-no-repeat bg-cover {{ page.tableReset }}"
+          style="object-fit: cover;"
+        >
+          <!--[if gte mso 9]>
+          <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width: 600px; object-fit: cover; background-repeat: no-repeat;">
+            <v:fill type="tile" src="{{ page.headerMailchimp }}" color="#ffffff" />
+            <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+          <![endif]-->
+          <div>
+            <!-- Spacer -->
+            <table class="{{ page.tableReset }}">
+              <tr>
+                <td class="leading-16">&zwnj;</td>
+              </tr>
+            </table>
+
+            <table class="px-8 {{ page.tableReset }}">
+              <tr>
+                <td class="{{ page.smReset }} text-left">
+                  <a href="" class="no-underline text-white" target="_blank">
+                    <h1 class="text-white text-4xl font-extrabold leading-sm sm:leading-sm">
+                      {{ page.title }} <span class="text-brand-robotics">TŘIKRÁT</span>.
+                    </h1>
+                  </a>
+
+                  <!-- Spacer -->
+                  <table class="{{ page.tableReset }}">
+                    <tr>
+                      <td class="leading-4">&zwnj;</td>
+                    </tr>
+                  </table>
+
+                  <p class="text-white text-md leading-sm sm:leading-sm">
+                    {{ page.description }}
+                  </p>
+                </td>
+              </tr>
+            </table>
+
+            <table class="{{ page.tableReset }}">
+              <tr>
+                <td class="leading-16">&zwnj;</td>
+              </tr>
+            </table>
+            <!----------------------------------------------------------------------------------------------------->
+          </div>
+          <!--[if gte mso 9]>
+          </v:textbox>
+          </v:rect>
+          <![endif]-->
+        </td>
+      </tr>
+    </table>
+
+    <!-- Spacer -->
+    <table class="{{ page.tableReset }}">
+      <tr>
+        <td class="leading-8">&zwnj;</td>
+      </tr>
+    </table>
+
+    <!-- Video -->
+    <table class="px-8 {{ page.tableReset }}">
+      <tr>
+        <td class="text-center">
+          <h1 class="text-secondary text-2xl font-extrabold pb-4 leading-sm sm:leading-sm">
+            {{ page.video.title }}
+          </h1>
+
+          <a href="{{ page.video.url }}" target="_blank">
+            <img src="{{ page.video.image.src }}" alt="{{ page.video.image.alt }}" style="max-width: 500px;">
+          </a>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Spacer -->
+    <table class="{{ page.tableReset }}">
+      <tr>
+        <td class="leading-8">&zwnj;</td>
+      </tr>
+    </table>
+
+    <!-- Benefits -->
+    <table class="{{ page.tableReset }}">
+      <tr class="px-32">
+        <td class="w-6/12">
+          <img src="{{ page.benefits.image.src }}" alt="{{ page.benefits.image.alt }}" style="max-width: 300px;">
+        </td>
+
+        <td class="w-6/12">
+          <h1 class="text-secondary text-2xl font-extrabold mb-8 leading-sm sm:leading-sm">
+            {{ page.benefits.title }}
+          </h1>
+
+          <ul class="mb-4 pl-4">
+            <li class="text-secondary my-3 leading-sm sm:leading-sm">
+              {{ page.benefits.item1 }}
+            </li>
+
+            <li class="text-secondary my-3 leading-sm sm:leading-sm">
+              {{ page.benefits.item2 }}
+            </li>
+
+            <li class="text-secondary my-3 leading-sm sm:leading-sm">
+              {{ page.benefits.item3 }}
+            </li>
+
+            <li class="text-secondary my-3 leading-sm sm:leading-sm">
+              {{ page.benefits.item4 }}
+            </li>
+
+            <li class="text-secondary my-3 leading-sm sm:leading-sm">
+              {{ page.benefits.item5 }}
+            </li>
+          </ul>
+
+          <component src="buttons/button.html" locals='{ "content": "Mám zájem", "url": "mailto: robotics@sluno.cz;", "class": "bg-brand-robotics text-white" }'></component>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Spacer -->
+    <table class="{{ page.tableReset }}">
+      <tr>
+        <td class="leading-16">&zwnj;</td>
+      </tr>
+    </table>
+
+    <!-- Video -->
+    <table class="bg-gray-lighter px-8 {{ page.tableReset }}">
+      <tr>
+        <td class="text-center">
+          <!-- Spacer -->
+          <table class="{{ page.tableReset }}">
+            <tr>
+              <td class="leading-8">&zwnj;</td>
+            </tr>
+          </table>
+
+          <img src="{{ page.photo.image.src }}" alt="{{ page.photo.image.alt }}" style="max-width: 500px;">
+
+          <p class="text-secondary text-base font-extrabold py-4 leading-sm sm:leading-sm">
+            {{ page.photo.title }}
+          </p>
+
+          <!-- Spacer -->
+          <table class="{{ page.tableReset }}">
+            <tr>
+              <td class="leading-8">&zwnj;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Spacer -->
+    <table class="{{ page.tableReset }}">
+      <tr>
+        <td class="leading-8">&zwnj;</td>
+      </tr>
+    </table>
+
+    <!-- Footer -->
+    <table class="bg-white {{ page.tableReset }}">
+      <component src="footer.html" locals='{ "brand": "robotics" }'></component>
+    </table>
+  </block>
+</extends>

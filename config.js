@@ -1,5 +1,6 @@
 module.exports = {
   build: {
+    doctype: 'html',
     templates: {
       source: 'src/templates',
       destination: {
