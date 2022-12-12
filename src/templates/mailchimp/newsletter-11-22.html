@@ -7,7 +7,7 @@ tableReset: "w-600 sm:w-full"
 header: "https://res.cloudinary.com/patrik-vadura/image/upload/v1669795741/USLUNO/newsletter_11_22/backgrounds/background_gradient_blue_1_fuqxwo.jpg"
 headerMailchimp: "https://res.cloudinary.com/patrik-vadura/image/upload/v1669795742/USLUNO/newsletter_11_22/backgrounds/background_gradient_blue_w600_1_hioy0y.jpg"
 
-title: "Zrychlete vychystávání!"
+title: "Zrychlete vychystávání! TŘIKRÁT."
 description: "Nasaďte autonomní roboty, kteří se napojí na vaše stávající systémy a nevyžadují žádné stavební úpravy skladu. Představujeme autonomního robota FlexShelf."
 
 benefits:
@@ -43,7 +43,7 @@ photo:
     </table>
 
     <!-- Hero -->
-    <table class="{{ page.tableReset }}">
+    <table class="bg-white {{ page.tableReset }}">
       <tr class="text-center">
         <td
           background="{{ page.headerMailchimp }}"
@@ -58,44 +58,49 @@ photo:
             <v:fill type="tile" src="{{ page.headerMailchimp }}" color="#ffffff" />
             <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
           <![endif]-->
-          <div>
-            <!-- Spacer -->
-            <table class="{{ page.tableReset }}">
-              <tr>
-                <td class="leading-16">&zwnj;</td>
-              </tr>
-            </table>
+          <!-- Spacer -->
+          <table class="{{ page.tableReset }}">
+            <tr>
+              <td class="leading-16">&zwnj;</td>
+            </tr>
+          </table>
 
-            <table class="px-8 {{ page.tableReset }}">
-              <tr>
-                <td class="{{ page.smReset }} text-left">
-                  <a href="" class="no-underline text-white" target="_blank">
-                    <h1 class="text-white text-4xl font-extrabold leading-sm sm:leading-sm">
-                      {{ page.title }} <span class="text-brand-robotics">TŘIKRÁT</span>.
-                    </h1>
-                  </a>
+          <table class="{{ page.tableReset }}">
+            <tr>
+              <td class="px-8 {{ page.smReset }} text-left">
+                <h1 class="text-white text-4xl font-extrabold leading-sm sm:leading-sm">
+                  Zrychlete vychystávání!
+                </h1>
 
-                  <!-- Spacer -->
-                  <table class="{{ page.tableReset }}">
-                    <tr>
-                      <td class="leading-4">&zwnj;</td>
-                    </tr>
-                  </table>
+                <h1 class="text-brand-robotics text-4xl font-extrabold leading-sm sm:leading-sm">
+                  TŘIKRÁT.
+                </h1>
 
-                  <p class="text-white text-md leading-sm sm:leading-sm">
-                    {{ page.description }}
-                  </p>
-                </td>
-              </tr>
-            </table>
+                <!-- Spacer -->
+                <table class="{{ page.tableReset }}">
+                  <tr>
+                    <td class="leading-4">&zwnj;</td>
+                  </tr>
+                </table>
 
-            <table class="{{ page.tableReset }}">
-              <tr>
-                <td class="leading-16">&zwnj;</td>
-              </tr>
-            </table>
-            <!----------------------------------------------------------------------------------------------------->
-          </div>
+                <table class="{{ page.tableReset }}">
+                  <tr>
+                    <td class="px-8">
+                      <p class="text-white text-md leading-sm sm:leading-sm">
+                        {{ page.description }}
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+
+          <table class="{{ page.tableReset }}">
+            <tr>
+              <td class="leading-16">&zwnj;</td>
+            </tr>
+          </table>
           <!--[if gte mso 9]>
           </v:textbox>
           </v:rect>
@@ -105,14 +110,14 @@ photo:
     </table>
 
     <!-- Spacer -->
-    <table class="{{ page.tableReset }}">
+    <table class="bg-white {{ page.tableReset }}">
       <tr>
         <td class="leading-8">&zwnj;</td>
       </tr>
     </table>
 
     <!-- Video -->
-    <table class="px-8 {{ page.tableReset }}">
+    <table class="px-8 bg-white {{ page.tableReset }}">
       <tr>
         <td class="text-center">
           <h1 class="text-secondary text-2xl font-extrabold pb-4 leading-sm sm:leading-sm">
@@ -120,27 +125,31 @@ photo:
           </h1>
 
           <a href="{{ page.video.url }}" target="_blank">
-            <img src="{{ page.video.image.src }}" alt="{{ page.video.image.alt }}" style="max-width: 500px;">
+            <img src="{{ page.video.image.src }}" alt="{{ page.video.image.alt }}" style="width: 500px;">
           </a>
         </td>
       </tr>
     </table>
 
     <!-- Spacer -->
-    <table class="{{ page.tableReset }}">
+    <table class="bg-white {{ page.tableReset }}">
       <tr>
         <td class="leading-8">&zwnj;</td>
       </tr>
     </table>
 
     <!-- Benefits -->
-    <table class="{{ page.tableReset }}">
+    <table class="bg-white {{ page.tableReset }}">
       <tr class="px-32">
-        <td class="w-6/12">
-          <img src="{{ page.benefits.image.src }}" alt="{{ page.benefits.image.alt }}" style="max-width: 300px;">
+        <td align="center" class="w-600 text-center">
+          <img src="{{ page.benefits.image.src }}" alt="{{ page.benefits.image.alt }}" style="width: 300px;">
         </td>
+      </tr>
+    </table>
 
-        <td class="w-6/12">
+    <table class="bg-white {{ page.tableReset }}">
+      <tr>
+        <td class="bg-white w-600 px-16">
           <h1 class="text-secondary text-2xl font-extrabold mb-8 leading-sm sm:leading-sm">
             {{ page.benefits.title }}
           </h1>
@@ -167,13 +176,26 @@ photo:
             </li>
           </ul>
 
+          <!-- Spacer -->
+          <table class="bg-white {{ page.tableReset }}">
+            <tr>
+              <td class="leading-8">&zwnj;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <table class="bg-white {{ page.tableReset }}">
+      <tr>
+        <td align="center" class="bg-white w-600 px-16 text-center">
           <component src="buttons/button.html" locals='{ "content": "Mám zájem", "url": "mailto: robotics@sluno.cz;", "class": "bg-brand-robotics text-white" }'></component>
         </td>
       </tr>
     </table>
 
     <!-- Spacer -->
-    <table class="{{ page.tableReset }}">
+    <table class="bg-white {{ page.tableReset }}">
       <tr>
         <td class="leading-16">&zwnj;</td>
       </tr>
@@ -190,7 +212,7 @@ photo:
             </tr>
           </table>
 
-          <img src="{{ page.photo.image.src }}" alt="{{ page.photo.image.alt }}" style="max-width: 500px;">
+          <img src="{{ page.photo.image.src }}" alt="{{ page.photo.image.alt }}" style="width: 500px;">
 
           <p class="text-secondary text-base font-extrabold py-4 leading-sm sm:leading-sm">
             {{ page.photo.title }}
@@ -207,7 +229,7 @@ photo:
     </table>
 
     <!-- Spacer -->
-    <table class="{{ page.tableReset }}">
+    <table class="bg-white {{ page.tableReset }}">
       <tr>
         <td class="leading-8">&zwnj;</td>
       </tr>
