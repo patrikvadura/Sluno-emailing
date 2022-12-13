@@ -4,11 +4,7 @@ preheader: ""
 
 tableReset: "w-600 sm:w-full"
 
-header: "https://res.cloudinary.com/patrik-vadura/image/upload/v1670852164/USLUNO/newsletter_12_22/background_christmas_qktyfu.jpg"
-headerMailchimp: "https://res.cloudinary.com/patrik-vadura/image/upload/v1670852163/USLUNO/newsletter_12_22/background_christmas_w_600_uvhn7x.jpg"
-
-title: "Vánoční newsletter"
-description: "Přejeme vám krásné prožití vánočních svátků a úspěšené vykročení do nového roku."
+header: "https://res.cloudinary.com/patrik-vadura/image/upload/v1670935870/USLUNO/newsletter_12_22/background_christmas_pflike_ahw7gu.jpg"
 ---
 
 <extends src="src/layouts/main.html">
@@ -22,27 +18,8 @@ description: "Přejeme vám krásné prožití vánočních svátků a úspěše
           </table>
 
           <!-- Header -->
-          <table class="bg-top bg-no-repeat bg-cover flex justify-center py-8 w-full"
-                 style="background-image: url('{{ page.header }}');">
-            <tr>
-              <td align="center">
-                <table class="py-8 {{ page.tableReset }}">
-                  <th>
-                  <td class="px-8">
-                    <a href="" class="no-underline" target="_blank">
-                      <h1 class="text-white text-4xl font-extrabold mt-8 leading-sm sm:leading-sm">
-                        {{ page.title }}
-                      </h1>
-                    </a>
-
-                    <p class="text-white text-md my-8 leading-sm sm:leading-sm">
-                      {{ page.description }}
-                    </p>
-                  </td>
-                  </th>
-                </table>
-              </td>
-            </tr>
+          <table class="bg-center bg-no-repeat bg-cover flex justify-center w-full"
+                 style="background-image: url('{{ page.header }}'); height: 400px;">
           </table>
 
           <!-- Timeline -->
@@ -63,14 +40,16 @@ description: "Přejeme vám krásné prožití vánočních svátků a úspěše
 
                 <table class="{{ page.tableReset }}">
                   <tr>
-                    <td class="w-6/12 px-8">
+                    <td class="w-8/12 px-8">
                       <p class="text-secondary mb-8 leading-sm sm:leading-sm">
-                        S novou vizuální identitou přišel i <a href="https://www.u-sluno.eu/" class="text-primary">nový web</a>, na který jsme moc pyšní.
+                        S novou vizuální identitou přišel i <a href="https://www.u-sluno.eu/" class="text-primary" target="_blank">nový web</a>, na který jsme moc pyšní.
                       </p>
                     </td>
 
-                    <td class="w-6/12">
-                      <img src="https://res.cloudinary.com/patrik-vadura/image/upload/v1670852874/USLUNO/newsletter_12_22/timeline/01_Brand_vpugva.png" style="width: 300px;">
+                    <td class="w-4/12">
+                      <a href="https://www.u-sluno.eu/" class="text-primary" target="_blank">
+                        <img src="https://res.cloudinary.com/patrik-vadura/image/upload/v1670936447/USLUNO/newsletter_12_22/timeline/500px/timeline_01_qlxaus.jpg" style="width: 200px;">
+                      </a>
                     </td>
                   </tr>
                 </table>
@@ -83,9 +62,9 @@ description: "Přejeme vám krásné prožití vánočních svátků a úspěše
                 <!-- O2 -->
                 <table class="{{ page.tableReset }}">
                   <tr>
-                    <td class="w-6/12 px-8 text-center">
+                    <td class="w-12/12 px-8 text-center">
                       <h1 class="text-secondary text-2xl font-extrabold mb-8 leading-sm sm:leading-sm">
-                        Pozoruhodný produkt 2023
+                        Pozoruhodný produkt
                       </h1>
                     </td>
                   </tr>
@@ -93,13 +72,15 @@ description: "Přejeme vám krásné prožití vánočních svátků a úspěše
 
                 <table class="{{ page.tableReset }}">
                   <tr>
-                    <td class="w-6/12">
-                      <img src="https://res.cloudinary.com/patrik-vadura/image/upload/v1670852880/USLUNO/newsletter_12_22/timeline/02_PFAI_y7duml.png" style="width: 300px;">
+                    <td class="w-4/12">
+                      <a href="https://www.businessit.cz/cz1/top-reseni-pozoruhodne-it-produkty-pro-rok-2023.php" class="text-primary" target="_blank">
+                        <img src="https://res.cloudinary.com/patrik-vadura/image/upload/v1670936447/USLUNO/newsletter_12_22/timeline/500px/timeline_02_bgjoev.jpg" style="width: 200px;">
+                      </a>
                     </td>
 
-                    <td class="w-6/12 px-8">
+                    <td class="w-8/12 px-8">
                       <p class="text-secondary mb-8 leading-sm sm:leading-sm">
-                        S Promo Forecast AI jsme se dostali do TOP řešení: <a href="https://www.businessit.cz/cz1/top-reseni-pozoruhodne-it-produkty-pro-rok-2023.php" class="text-primary">Pozoruhodné IT produkty</a> pro rok 2023.
+                        S Promo Forecast AI jsme se dostali do TOP řešení: <a href="https://www.businessit.cz/cz1/top-reseni-pozoruhodne-it-produkty-pro-rok-2023.php" class="text-primary" target="_blank">Pozoruhodné IT produkty</a> pro rok 2023.
                       </p>
                     </td>
                   </tr>
@@ -113,7 +94,7 @@ description: "Přejeme vám krásné prožití vánočních svátků a úspěše
                 <!-- O3 -->
                 <table class="{{ page.tableReset }}">
                   <tr>
-                    <td class="w-6/12 px-8 text-center">
+                    <td class="w-12/12 px-8 text-center">
                       <h1 class="text-secondary text-2xl font-extrabold mb-8 leading-sm sm:leading-sm">
                         Jedna akce za druhou
                       </h1>
@@ -123,35 +104,39 @@ description: "Přejeme vám krásné prožití vánočních svátků a úspěše
 
                 <table class="{{ page.tableReset }}">
                   <tr>
-                    <td class="w-6/12 px-8">
+                    <td class="w-8/12 px-8">
                       <h3 class="text-secondary text-lg font-extrabold leading-sm sm:leading-sm">
-                        Konference offline
+                        Konference
                       </h3>
 
                       <p class="text-secondary mb-8 leading-sm sm:leading-sm">
-                        Nejvíc jsme byli vidět na <a href="https://youtu.be/odUF0XChdnw" class="text-primary">Retail Summitu</a> s třídicími roboty.
+                        Nejvíc jsme byli vidět na <a href="https://youtu.be/odUF0XChdnw" class="text-primary" target="_blank">Retail Summitu</a> s třídicími roboty.
                       </p>
                     </td>
 
-                    <td class="w-6/12">
-                      <img src="https://res.cloudinary.com/patrik-vadura/image/upload/v1670852881/USLUNO/newsletter_12_22/timeline/03_Konference_eemawd.jpg" style="width: 300px;">
+                    <td class="w-4/12">
+                      <a href="https://youtu.be/odUF0XChdnw" class="text-primary" target="_blank">
+                        <img src="https://res.cloudinary.com/patrik-vadura/image/upload/v1670937683/USLUNO/newsletter_12_22/timeline/500px/timeline_03_02_play_m7qgmw.jpg" style="width: 200px;">
+                      </a>
                     </td>
                   </tr>
                 </table>
 
                 <table class="{{ page.tableReset }}">
                   <tr>
-                    <td class="w-6/12">
-                      <img src="https://res.cloudinary.com/patrik-vadura/image/upload/v1670852882/USLUNO/newsletter_12_22/timeline/03_Webin%C3%A1%C5%99_geyaqd.png" style="width: 300px;">
+                    <td class="w-4/12">
+                      <a href="https://youtu.be/LttqQB1o3ug" class="text-primary" target="_blank">
+                        <img src="https://res.cloudinary.com/patrik-vadura/image/upload/v1670937683/USLUNO/newsletter_12_22/timeline/500px/timeline_03_01_play_zebhz2.jpg" style="width: 200px;">
+                      </a>
                     </td>
 
-                    <td class="w-6/12 px-8">
+                    <td class="w-8/12 px-8">
                       <h3 class="text-secondary text-lg font-extrabold leading-sm sm:leading-sm">
-                        Webináře online
+                        Webináře
                       </h3>
 
                       <p class="text-secondary mb-8 leading-sm sm:leading-sm">
-                        Za rok jsme uspořádali 5 webinářů a největší úspěch měl <a href="https://youtu.be/LttqQB1o3ug" class="text-primary">Promo Forecast AI.</a>
+                        Za rok jsme uspořádali 5 webinářů a největší úspěch měl <a href="https://youtu.be/LttqQB1o3ug" class="text-primary" target="_blank">Promo Forecast AI.</a>
                       </p>
                     </td>
                   </tr>
@@ -159,19 +144,21 @@ description: "Přejeme vám krásné prožití vánočních svátků a úspěše
 
                 <table class="{{ page.tableReset }}">
                   <tr>
-                    <td class="w-6/12 px-8">
+                    <td class="w-8/12 px-8">
                       <h3 class="text-secondary text-lg font-extrabold leading-sm sm:leading-sm">
                         Roboti naživo
                       </h3>
 
                       <p class="text-secondary mb-8 leading-sm sm:leading-sm">
-                        Pro velký zájem jsme uspořádali <a href="https://youtu.be/Gg6KjLp-cF4" class="text-primary">ukázku autonomních robotů</a> ve Skladonu.
+                        Pro velký zájem jsme uspořádali <a href="https://youtu.be/Gg6KjLp-cF4" class="text-primary" target="_blank">ukázku autonomních robotů</a> ve Skladonu.
                       </p>
 
                     </td>
 
-                    <td class="w-6/12">
-                      <img src="https://res.cloudinary.com/patrik-vadura/image/upload/v1670852885/USLUNO/newsletter_12_22/timeline/03_Roboti_d3xq7t.png" style="width: 300px;">
+                    <td class="w-4/12">
+                      <a href="https://youtu.be/Gg6KjLp-cF4" class="text-primary" target="_blank">
+                        <img src="https://res.cloudinary.com/patrik-vadura/image/upload/v1670937683/USLUNO/newsletter_12_22/timeline/500px/timeline_03_play_c4ggcy.jpg" style="width: 200px;">
+                      </a>
                     </td>
                   </tr>
                 </table>
@@ -184,7 +171,7 @@ description: "Přejeme vám krásné prožití vánočních svátků a úspěše
                 <!-- O4 -->
                 <table class="{{ page.tableReset }}">
                   <tr>
-                    <td class="w-6/12 px-8 text-center">
+                    <td class="w-12/12 px-8 text-center">
                       <h1 class="text-secondary text-2xl font-extrabold mb-8 leading-sm sm:leading-sm">
                         Sluno žije na sockách
                       </h1>
@@ -194,17 +181,19 @@ description: "Přejeme vám krásné prožití vánočních svátků a úspěše
 
                 <table class="{{ page.tableReset }}">
                   <tr>
-                    <td class="w-6/12">
-                      <img src="https://res.cloudinary.com/patrik-vadura/image/upload/v1670852879/USLUNO/newsletter_12_22/timeline/04_Facebook_xzrhn3.jpg" style="width: 300px;">
+                    <td class="w-4/12">
+                      <a href="https://www.facebook.com/slunocz/photos/a.1490447867714454/5091742157584989/" class="text-primary" target="_blank">
+                        <img src="https://res.cloudinary.com/patrik-vadura/image/upload/v1670936447/USLUNO/newsletter_12_22/timeline/500px/timeline_04_01_bujong.jpg" style="width: 200px;">
+                      </a>
                     </td>
 
-                    <td class="w-6/12 px-8">
+                    <td class="w-8/12 px-8">
                       <h3 class="text-secondary text-lg font-extrabold leading-sm sm:leading-sm">
                         Nej na Facebooku
                       </h3>
 
                       <p class="text-secondary mb-8 leading-sm sm:leading-sm">
-                        <a href="https://www.facebook.com/slunocz/photos/a.1490447867714454/5091742157584989/" class="text-primary">Darujeme</a> krev a plazmu. V roce 2022 to bylo 17x 470 ml a 1x 830 ml.
+                        <a href="https://www.facebook.com/slunocz/photos/a.1490447867714454/5091742157584989/" class="text-primary" target="_blank">Darujeme</a> krev a plazmu. V roce 2022 to bylo 17x 470 ml a 1x 830 ml.
                       </p>
                     </td>
                   </tr>
@@ -212,35 +201,39 @@ description: "Přejeme vám krásné prožití vánočních svátků a úspěše
 
                 <table class="{{ page.tableReset }}">
                   <tr>
-                    <td class="w-6/12 px-8">
+                    <td class="w-8/12 px-8">
                       <h3 class="text-secondary text-lg font-extrabold leading-sm sm:leading-sm">
                         Nej na LinkedInu
                       </h3>
 
                       <p class="text-secondary mb-8 leading-sm sm:leading-sm">
-                        Nejvíce reakcí získalo <a href="https://www.linkedin.com/posts/sluno_sortovac%25C3%25AD-roboti-activity-6897106230465085440-hOcW?utm_source=share&utm_medium=member_desktop" class="text-primary">video</a>, ve kterém jsme ukázali, jak to vypadá u nás v labu třídicích robotů.
+                        Nejvíce reakcí získalo <a href="https://www.linkedin.com/posts/sluno_sortovac%25C3%25AD-roboti-activity-6897106230465085440-hOcW?utm_source=share&utm_medium=member_desktop" class="text-primary" target="_blank">video</a>, ve kterém jsme ukázali, jak to vypadá u nás v labu třídicích robotů.
                       </p>
                     </td>
 
-                    <td class="w-6/12">
-                      <img src="https://res.cloudinary.com/patrik-vadura/image/upload/v1670852879/USLUNO/newsletter_12_22/timeline/04_LinkedIn_uazbjf.jpg" style="width: 300px;">
+                    <td class="w-4/12">
+                      <a href="https://www.linkedin.com/posts/sluno_sortovac%25C3%25AD-roboti-activity-6897106230465085440-hOcW?utm_source=share&utm_medium=member_desktop" class="text-primary" target="_blank">
+                        <img src="https://res.cloudinary.com/patrik-vadura/image/upload/v1670937683/USLUNO/newsletter_12_22/timeline/500px/timeline_04_02_play_xufcsm.jpg" style="width: 200px;">
+                      </a>
                     </td>
                   </tr>
                 </table>
 
                 <table class="{{ page.tableReset }}">
                   <tr>
-                    <td class="w-6/12">
-                      <img src="https://res.cloudinary.com/patrik-vadura/image/upload/v1670852880/USLUNO/newsletter_12_22/timeline/04_Zpravodaj_wmdnso.png" style="width: 300px;">
+                    <td class="w-4/12">
+                      <a href="https://www.linkedin.com/newsletters/marketin-6980109247967608832/" class="text-primary" target="_blank">
+                        <img src="https://res.cloudinary.com/patrik-vadura/image/upload/v1670936447/USLUNO/newsletter_12_22/timeline/500px/timeline_04_adoow2.jpg" style="width: 200px;">
+                      </a>
                     </td>
 
-                    <td class="w-6/12 px-8">
+                    <td class="w-8/12 px-8">
                       <h3 class="text-secondary text-lg font-extrabold leading-sm sm:leading-sm">
                         Tvoříme zpravodaj
                       </h3>
 
                       <p class="text-secondary mb-8 leading-sm sm:leading-sm">
-                        Na LinkedInu jsem založili <a href="https://www.linkedin.com/newsletters/marketin-6980109247967608832/" class="text-primary">MarketIn</a> o novinkách z retailu a logistiky očima našich expertů.
+                        Na LinkedInu jsem založili <a href="https://www.linkedin.com/newsletters/marketin-6980109247967608832/" class="text-primary" target="_blank">MarketIn</a> o novinkách z retailu a logistiky očima našich expertů.
                       </p>
                     </td>
                   </tr>
@@ -254,7 +247,7 @@ description: "Přejeme vám krásné prožití vánočních svátků a úspěše
                 <!-- O5 -->
                 <table class="{{ page.tableReset }}">
                   <tr>
-                    <td class="w-6/12 px-8 text-center">
+                    <td class="w-12/12 px-8 text-center">
                       <h1 class="text-secondary text-2xl font-extrabold mb-8 leading-sm sm:leading-sm">
                         Historický ostravský deal: K2 kupuje 50% podíl ve skupině Sluno
                       </h1>
@@ -266,12 +259,14 @@ description: "Přejeme vám krásné prožití vánočních svátků a úspěše
                   <tr>
                     <td class="px-8 text-center">
                       <p class="text-secondary mb-8 leading-sm sm:leading-sm">
-                        „Čeká nás spousta práce na tom, abychom co nejvíce <a href="https://www.u-sluno.eu/historicky-ostravsky-deal-k2-kupuje-50-podil-ve-skupine-sluno/" class="text-primary">využili všech synergií</a>, které nám tohle partnerství dává. A kromě toho už teď vidím, že máme vedle sebe parťáky, kteří nám přinášejí nové pohledy a pomáhají rozšířit obzory.“
+                        „Čeká nás spousta práce na tom, abychom co nejvíce <a href="https://www.u-sluno.eu/historicky-ostravsky-deal-k2-kupuje-50-podil-ve-skupine-sluno/" class="text-primary" target="_blank">využili všech synergií</a>, které nám tohle partnerství dává. A kromě toho už teď vidím, že máme vedle sebe parťáky, kteří nám přinášejí nové pohledy a pomáhají rozšířit obzory.“
                         <br><br>
                         <b>Jiří Novák, předseda dozorčí rady Sluno</b>
                       </p>
 
-                      <img src="https://res.cloudinary.com/patrik-vadura/image/upload/v1670852886/USLUNO/newsletter_12_22/timeline/05_K2_hiixc4.jpg" style="width: 600px;">
+                      <a href="https://www.u-sluno.eu/historicky-ostravsky-deal-k2-kupuje-50-podil-ve-skupine-sluno/" class="text-primary" target="_blank">
+                        <img src="https://res.cloudinary.com/patrik-vadura/image/upload/v1670852886/USLUNO/newsletter_12_22/timeline/05_K2_hiixc4.jpg" style="width: 600px;">
+                      </a>
                     </td>
                   </tr>
                 </table>
@@ -290,11 +285,6 @@ description: "Přejeme vám krásné prožití vánočních svátků a úspěše
                 </table>
               </td>
             </tr>
-          </table>
-
-          <!-- Spacer -->
-          <table class="w-full">
-            <component src="spacers/spacer.html" locals='{ "size": "32" }'></component>
           </table>
 
           <!-- Footer -->
