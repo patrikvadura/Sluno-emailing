@@ -1,0 +1,149 @@
+---
+ReleaseN: "03-23"
+preheader: ""
+
+tableReset: "w-600 sm:w-full"
+
+header: "https://res.cloudinary.com/patrik-vadura/image/upload/v1679556285/USLUNO/newsletter_03_23/background_1_lqo86l.jpg"
+---
+
+<extends src="src/layouts/main.html">
+  <block align="center" class="bg-white" name="template">
+    <table class="bg-white w-full font-sans">
+      <tr>
+        <td align="center">
+          <!-- TopBar -->
+          <table class="bg-white {{ page.tableReset }}">
+            <component src="topBar.html"></component>
+          </table>
+
+          <!-- Header -->
+          <table class="bg-center bg-no-repeat bg-cover flex justify-center w-full"
+                 style="background-image: url('{{ page.header }}'); height: 400px;">
+          </table>
+
+          <!-- Timeline -->
+          <table class="py-8 w-full sm:w-full">
+            <tr>
+              <td align="center">
+
+                <!-- Heading -->
+                <table class="{{ page.tableReset }}">
+                  <tr>
+                    <td class="w-8/12 px-8 text-center">
+                      <p class="text-secondary mb-8 text-xl leading-sm sm:leading-sm">
+                        Přijďte se podívat, jak roboti autonomně manipulují s paletami ve skladu.
+                      </p>
+
+                      <a href="http://www.slunorobotics.eu/" target="_blank" class="bg-black text-white btn hover:bg-brand-robotics">
+                        <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%; mso-text-raise: 26pt;">&nbsp;</i><![endif]-->
+                        <span style="mso-text-raise: 13pt;">Registrovat se</span>
+                        <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%;">&nbsp;</i><![endif]-->
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- Spacer -->
+                <table>
+                  <tr>
+                    <td class="leading-16">&zwnj;</td>
+                  </tr>
+                </table>
+
+                <!-- Robot -->
+                <table class="{{ page.tableReset }}">
+                  <tr>
+                    <td class="px-8 text-center">
+                      <img src="https://res.cloudinary.com/patrik-vadura/image/upload/v1679556725/USLUNO/newsletter_03_23/robot_01_ep0x8j.png" style="width: 400px;">
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- Spacer -->
+                <table>
+                  <tr>
+                    <td class="leading-16">&zwnj;</td>
+                  </tr>
+                </table>
+
+                <!-- Video -->
+                <table class="p-8 shadow-xl rounded-xl {{ page.tableReset }}">
+                  <tr>
+                    <td class="w-8/12 px-8">
+                      <h3 class="text-brand-robotics text-xl font-extrabold leading-sm sm:leading-sm">
+                        Prohlédněte si video z naší předchozí roadshow
+                      </h3>
+
+                      <!-- Spacer -->
+                      <table>
+                        <tr>
+                          <td class="leading-6">&zwnj;</td>
+                        </tr>
+                      </table>
+
+                      <a href="https://www.youtube.com/watch?v=Gg6KjLp-cF4" target="_blank" class="bg-black text-white btn hover:bg-brand-robotics">
+                        <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%; mso-text-raise: 26pt;">&nbsp;</i><![endif]-->
+                        <span style="mso-text-raise: 13pt;">Zobrazit video</span>
+                        <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%;">&nbsp;</i><![endif]-->
+                      </a>
+                    </td>
+
+                    <td class="w-4/12">
+                      <a href="https://www.youtube.com/watch?v=Gg6KjLp-cF4" target="_blank">
+                        <img src="https://res.cloudinary.com/patrik-vadura/image/upload/v1679557235/USLUNO/newsletter_03_23/video_q36npa.jpg" style="width: 200px;">
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- Spacer -->
+                <table>
+                  <tr>
+                    <td class="leading-16">&zwnj;</td>
+                  </tr>
+                </table>
+
+                <!-- Partners -->
+                <table class="{{ page.tableReset }}">
+                  <tr>
+                    <td class="w-8/12 px-8 text-center">
+                      <h3 class="text-brand-robotics text-xl font-extrabold leading-sm sm:leading-sm">
+                        Partneři akce
+                      </h3>
+                    </td>
+                  </tr>
+                </table>
+
+                <table class="p-8 {{ page.tableReset }}">
+                  <tr>
+                    <td class="w-3/12 text-center">
+                      <img src="https://res.cloudinary.com/patrik-vadura/image/upload/v1679556285/USLUNO/newsletter_03_23/logo_zebra_ickya6.png" style="height: 35px;">
+                    </td>
+
+                    <td class="w-3/12 text-center">
+                      <img src="https://res.cloudinary.com/patrik-vadura/image/upload/v1679556285/USLUNO/newsletter_03_23/logo_knopp_wmjgin.png" style="height: 25px;">
+                    </td>
+
+                    <td class="w-3/12 text-center">
+                      <img src="https://res.cloudinary.com/patrik-vadura/image/upload/v1679556285/USLUNO/newsletter_03_23/logo_skladon_vrqdrm.png" style="height: 20px;">
+                    </td>
+
+                    <td class="w-3/12 text-center">
+                      <img src="https://res.cloudinary.com/patrik-vadura/image/upload/v1679556285/USLUNO/newsletter_03_23/logo_hopi_rnz9br.png" style="height: 40px;">
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Footer -->
+          <table class="w-full bg-white">
+            <component src="footer.html" locals='{ "brand": "robotics" }'></component>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </block>
+</extends>
