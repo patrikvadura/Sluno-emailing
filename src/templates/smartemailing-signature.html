@@ -2,14 +2,15 @@
 tableReset: "w-full sm:w-full"
 
 header: "https://res.cloudinary.com/patrik-vadura/image/upload/v1679556285/USLUNO/newsletter_03_23/background_1_lqo86l.jpg"
+link: "https://www.u-sluno.eu/#newsletter"
 ---
 
 <extends src="src/layouts/main.html">
   <block align="center" class="bg-white" name="template">
-    <table class="{{ page.tableReset }} bg-gray-lighter">
+    <table class="{{ page.tableReset }}" style="background-color: #feffff !important;">
       <tr>
-        <td class="w-12/12 px-8">
-          <p class="text-secondary text-sm leading-sm sm:leading-sm">
+        <td align="center" class="w-12/12 px-8">
+          <p class="text-center text-secondary text-sm leading-sm sm:leading-sm">
             Trendy z logistiky a retailu MarketIn pro vás vydává Sluno.
           </p>
 
@@ -29,14 +30,14 @@ header: "https://res.cloudinary.com/patrik-vadura/image/upload/v1679556285/USLUN
             </tr>
           </table>
 
-          <p class="text-xs text-gray-normal no-underline block">
-            Dostal se k vám email a rádi byste sledovali trendy? <strong>Přihlaste se k odběru</strong>. Pokud už nemáte zájem o emaily,
+          <p class="text-center text-xs text-gray-normal no-underline block">
+            Dostal se k vám email a rádi byste sledovali trendy? <a href="{{ page.link }}" class="font-bold text-gray-normal no-underline">Přihlaste se k odběru</a>. Pokud už nemáte zájem o emaily,
             <a href="{{unsubscribe}}" class="text-gray-normal font-bold no-underline">klikněte zde</a>.
           </p>
 
-          <p class="text-xs text-gray-normal font-bold no-underline block">
-            <a href="mailto:marketing@sluno.cz" class="text-gray-normal no-underline">marketing@sluno.cz</a> |
-            <a href="https://www.sluno.eu/" class="text-gray-normal no-underline">www.sluno.eu</a>
+          <p class="text-center text-xs text-gray-normal font-bold no-underline block">
+            <a href="mailto:marketing@sluno.cz" class="text-center text-gray-normal no-underline">marketing@sluno.cz</a> |
+            <a href="https://www.sluno.eu/" class="text-center text-gray-normal no-underline">www.sluno.eu</a>
           </p>
 
           <span style="display: none !important;">{{cl_senderemail}} {{cl_sendername}} {{df_emailaddress}}</span>
