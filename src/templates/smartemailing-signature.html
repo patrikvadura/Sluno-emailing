@@ -1,12 +1,11 @@
 ---
-tableReset: "w-600 sm:w-full"
+tableReset: "w-full sm:w-full"
 
 header: "https://res.cloudinary.com/patrik-vadura/image/upload/v1679556285/USLUNO/newsletter_03_23/background_1_lqo86l.jpg"
 ---
 
 <extends src="src/layouts/main.html">
   <block align="center" class="bg-white" name="template">
-    <!-- Varianta 1 -->
     <table class="{{ page.tableReset }} bg-gray-lighter">
       <tr>
         <td class="w-12/12 px-8">
@@ -32,57 +31,15 @@ header: "https://res.cloudinary.com/patrik-vadura/image/upload/v1679556285/USLUN
 
           <p class="text-xs text-gray-normal no-underline block">
             Dostal se k vám email a rádi byste sledovali trendy? <strong>Přihlaste se k odběru</strong>. Pokud už nemáte zájem o emaily,
-            <a href="" class="text-gray-normal font-bold no-underline">klikněte zde</a>.
+            <a href="{{unsubscribe}}" class="text-gray-normal font-bold no-underline">klikněte zde</a>.
           </p>
 
           <p class="text-xs text-gray-normal font-bold no-underline block">
             <a href="mailto:marketing@sluno.cz" class="text-gray-normal no-underline">marketing@sluno.cz</a> |
             <a href="https://www.sluno.eu/" class="text-gray-normal no-underline">www.sluno.eu</a>
           </p>
-        </td>
-      </tr>
-    </table>
 
-    <!-- Spacer -->
-    <table>
-      <tr>
-        <td class="leading-8">&zwnj;</td>
-      </tr>
-    </table>
-
-    <!-- Varianta 2 -->
-    <table class="{{ page.tableReset }}" style="background-color: #1C1A38;">
-      <tr>
-        <td class="w-12/12 px-8">
-          <p class="text-white text-sm leading-sm sm:leading-sm">
-            Trendy z logistiky a retailu MarketIn pro vás vydává Sluno.
-          </p>
-
-          <!-- Spacer -->
-          <table>
-            <tr>
-              <td class="leading-2">&zwnj;</td>
-            </tr>
-          </table>
-
-          <img src="images/logo/logo_negative_alt.png" class="block text-center" width="120" alt="" style="width: 120px;">
-
-          <!-- Spacer -->
-          <table>
-            <tr>
-              <td class="leading-2">&zwnj;</td>
-            </tr>
-          </table>
-
-          <p class="text-xs text-white no-underline block">
-            Dostal se k vám email a rádi byste sledovali trendy? <strong>Přihlaste se k odběru</strong>. Pokud už nemáte zájem o emaily,
-            <a href="{{unsubscribe}}" class="text-white font-bold no-underline">klikněte zde</a>.
-          </p>
-
-          <p class="text-xs text-white font-bold no-underline block">
-            <a href="mailto:marketing@sluno.cz" class="text-white no-underline">marketing@sluno.cz</a> |
-            <a href="https://www.sluno.eu/" class="text-white no-underline">www.sluno.eu</a>
-          </p>
+          <span style="display: none !important;">{{cl_senderemail}} {{cl_sendername}} {{df_emailaddress}}</span>
         </td>
       </tr>
     </table>
